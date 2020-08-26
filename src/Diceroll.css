@@ -1,0 +1,32 @@
+.Diceroll {
+  display: flex;
+  flex-flow: column nowrap;
+  min-height: 100vh;
+}
+
+.Diceroll .wrapper {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.Diceroll button {
+  align-self: center;
+  width: 15em;
+  padding: 1.5em;
+  border: 0px;
+  border-radius: 10px;
+  color: white;
+  background-color: black;
+  margin-top: 3em;
+}
+
+.Diceroll button:hover {
+  background-color: purple;
+  cursor: pointer;
+}
+
+.Diceroll button:disabled {
+  background-color: darkgray;
+  cursor: not-allowed;
+}
