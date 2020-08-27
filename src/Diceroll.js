@@ -11,7 +11,6 @@ export class Diceroll extends Component {
     die1: 'one',
     die2: 'one',
     active: false,
-    text: 'Roll me!',
   };
 
   roll = (e) => {
@@ -34,7 +33,7 @@ export class Diceroll extends Component {
           <Die dieEyes={this.state.die2} rolling={this.state.active} />
         </div>
         <button onClick={this.roll} disabled={this.state.active}>
-          {this.state.text}
+          {this.state.active ? 'Rolling...' : 'Roll me!'}
         </button>
       </div>
     );
